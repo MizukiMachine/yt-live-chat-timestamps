@@ -1,0 +1,18 @@
+.ylct-timestamp {
+  color: var(--yt-live-chat-secondary-text-color, #909090);
+  display: inline-block;
+  flex: 0 0 auto;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: inherit;
+  margin-right: 4px;
+  min-width: 48px;
+  text-align: right;
+  white-space: nowrap;
+}
+
+yt-live-chat-text-message-renderer #timestamp:not(.ylct-timestamp),
+yt-live-chat-paid-message-renderer #timestamp:not(.ylct-timestamp),
+yt-live-chat-membership-item-renderer #timestamp:not(.ylct-timestamp) {
+  display: none !important;
+}

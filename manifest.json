@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Live Chat Timestamps",
+  "version": "0.1.0",
+  "description": "Adds HH:mm:ss timestamps to YouTube live chat messages.",
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["src/content.js"],
+      "css": ["src/content.css"],
+      "run_at": "document_idle",
+      "all_frames": true
+    }
+  ]
+}
